@@ -79,7 +79,7 @@ server {
 ```
 docker run --rm --name angie \
     -v /var/www:/usr/share/angie/html:ro \
-    -v $(pwd):/etc/angie:ro \
+    -v /etc/angie:/etc/angie:ro \
     -p 8080:80 -p 8443:443 \
     -d docker.angie.software/angie:latest
 ```
